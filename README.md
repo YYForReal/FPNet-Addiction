@@ -1,7 +1,5 @@
 # FPNet: 
 
-This repository is the unofficial **PyTorch** implementation of FPNet.
-# 翻译：
 这个仓库是FPNet的**PyTorch**实现（非官方）。借鉴SRNet增加了数据处理流程以及训练过程。
 
 
