@@ -6,6 +6,7 @@ from torchvision import transforms
 # from dataset.dataset import  DatasetLoad
 from FPNet import FPNet
 from PIL import Image
+import wandb
 
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 # 设置训练集、验证集、测试集路径
@@ -130,15 +131,16 @@ print("test_loader:", len(test_loader))
 model = FPNet().to(device)
 optimizer = torch.optim.Adam(model.parameters(), lr=1e-3)  # 学习率
 criterion = nn.CrossEntropyLoss()
-
 print("开始训练。。。")
+
+# Initialize wandb
+wandb.init(project='your_project_name', name='run_name')
+
 # 训练循环
 for epoch in range(train_epoch):  
     print(f"Epoch: {epoch+1}/{train_epoch}")
     model.train()
     for i, batch in enumerate(train_loader):
-        print(
-            f"Epoch: {epoch+1}/{train_epoch}, Batch: {i+1}/{len(train_loader)}")
         images = torch.cat((batch["cover"], batch["stego"]), 0).to(device)
         labels = torch.cat((batch["label"][0], batch["label"][1]), 0).to(device)
 
@@ -147,6 +149,9 @@ for epoch in range(train_epoch):
         loss = criterion(outputs, labels)
         loss.backward()
         optimizer.step()
+
+        # Log loss using wandb
+        wandb.log({"Train Loss": loss.item()})
 
         print(f"Epoch: {epoch+1}/{train_epoch}, Batch: {i+1}/{len(train_loader)}, Loss: {loss.item():.4f}")
 
@@ -165,8 +170,12 @@ for epoch in range(train_epoch):
             total += labels.size(0)
             correct += (predicted == labels).sum().item()
 
-    accuracy = correct / total
-    print(f"Validation Accuracy after Epoch {epoch+1}: {accuracy:.2%}")
+        accuracy = correct / total
+
+        # Log accuracy using wandb
+        wandb.log({"Validation Accuracy": accuracy})
+
+        print(f"Validation Accuracy after Epoch {epoch+1}: {accuracy:.2%}")
 
 # 保存模型参数
 torch.save(model.state_dict(), 'model/fpnet_model.pth')

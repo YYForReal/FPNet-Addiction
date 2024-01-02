@@ -25261,3 +25261,14 @@
 2024-01-02 19:54:06,669 INFO    Thread-12 :18535 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szu/code/FPNet-Addiction/wandb/run-20240102_194331-fpex35z7/files/output.log
 2024-01-02 19:54:08,591 DEBUG   HandlerThread:18535 [handler.py:handle_request():146] handle_request: status_report
 2024-01-02 19:54:13,592 DEBUG   HandlerThread:18535 [handler.py:handle_request():146] handle_request: status_report
+2024-01-02 19:54:18,592 DEBUG   HandlerThread:18535 [handler.py:handle_request():146] handle_request: status_report
+2024-01-02 19:54:19,200 DEBUG   HandlerThread:18535 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-02 19:54:19,201 DEBUG   HandlerThread:18535 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-02 19:54:19,201 DEBUG   SenderThread:18535 [sender.py:send_request():409] send_request: stop_status
+2024-01-02 19:54:24,522 DEBUG   HandlerThread:18535 [handler.py:handle_request():146] handle_request: status_report
+2024-01-02 19:54:29,523 DEBUG   HandlerThread:18535 [handler.py:handle_request():146] handle_request: status_report
+2024-01-02 19:54:33,599 DEBUG   SenderThread:18535 [sender.py:send():382] send: stats
+2024-01-02 19:54:34,201 DEBUG   HandlerThread:18535 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-02 19:54:34,201 DEBUG   SenderThread:18535 [sender.py:send_request():409] send_request: stop_status
+2024-01-02 19:54:34,241 DEBUG   HandlerThread:18535 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-02 19:54:35,467 DEBUG   HandlerThread:18535 [handler.py:handle_request():146] handle_request: status_report
