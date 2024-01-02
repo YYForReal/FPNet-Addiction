@@ -1,0 +1,168 @@
+{
+    "os": "Linux-5.4.0-150-generic-x86_64-with-glibc2.27",
+    "python": "3.9.18",
+    "heartbeatAt": "2024-01-02T11:43:33.601235",
+    "startedAt": "2024-01-02T11:43:31.323485",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/home/szu/code/FPNet-Addiction/train_FPNet_with_wandb.py",
+    "codePathLocal": "train_FPNet_with_wandb.py",
+    "codePath": "train_FPNet_with_wandb.py",
+    "git": {
+        "remote": "https://github.com/YYForReal/FPNet-Addiction.git",
+        "commit": "837368adc0afd2f58610c4cb06d776f685a3dda9"
+    },
+    "email": "2572082773@qq.com",
+    "root": "/home/szu/code/FPNet-Addiction",
+    "host": "szu-13700kf-02",
+    "username": "szu",
+    "executable": "/home/szu/.conda/envs/torch_rl/bin/python",
+    "cpu_count": 16,
+    "cpu_count_logical": 24,
+    "cpu_freq": {
+        "current": 4924.331625,
+        "min": 800.0,
+        "max": 5950.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 5300.0,
+            "min": 800.0,
+            "max": 6800.0
+        },
+        {
+            "current": 5300.0,
+            "min": 800.0,
+            "max": 6800.0
+        },
+        {
+            "current": 5252.44,
+            "min": 800.0,
+            "max": 6800.0
+        },
+        {
+            "current": 5297.956,
+            "min": 800.0,
+            "max": 6800.0
+        },
+        {
+            "current": 5300.0,
+            "min": 800.0,
+            "max": 6800.0
+        },
+        {
+            "current": 5299.859,
+            "min": 800.0,
+            "max": 6800.0
+        },
+        {
+            "current": 5300.0,
+            "min": 800.0,
+            "max": 6800.0
+        },
+        {
+            "current": 5313.417,
+            "min": 800.0,
+            "max": 6800.0
+        },
+        {
+            "current": 5266.322,
+            "min": 800.0,
+            "max": 6900.0
+        },
+        {
+            "current": 5300.0,
+            "min": 800.0,
+            "max": 6900.0
+        },
+        {
+            "current": 5290.362,
+            "min": 800.0,
+            "max": 6900.0
+        },
+        {
+            "current": 5298.661,
+            "min": 800.0,
+            "max": 6900.0
+        },
+        {
+            "current": 5300.0,
+            "min": 800.0,
+            "max": 6800.0
+        },
+        {
+            "current": 5300.0,
+            "min": 800.0,
+            "max": 6800.0
+        },
+        {
+            "current": 5300.0,
+            "min": 800.0,
+            "max": 6800.0
+        },
+        {
+            "current": 5300.0,
+            "min": 800.0,
+            "max": 6800.0
+        },
+        {
+            "current": 4199.748,
+            "min": 800.0,
+            "max": 4200.0
+        },
+        {
+            "current": 4200.118,
+            "min": 800.0,
+            "max": 4200.0
+        },
+        {
+            "current": 4199.866,
+            "min": 800.0,
+            "max": 4200.0
+        },
+        {
+            "current": 4200.341,
+            "min": 800.0,
+            "max": 4200.0
+        },
+        {
+            "current": 4199.807,
+            "min": 800.0,
+            "max": 4200.0
+        },
+        {
+            "current": 4199.843,
+            "min": 800.0,
+            "max": 4200.0
+        },
+        {
+            "current": 4200.016,
+            "min": 800.0,
+            "max": 4200.0
+        },
+        {
+            "current": 4200.012,
+            "min": 800.0,
+            "max": 4200.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 979.474983215332,
+            "used": 668.3559532165527
+        }
+    },
+    "gpu": "NVIDIA GeForce RTX 4070",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 4070",
+            "memory_total": 12878610432
+        }
+    ],
+    "memory": {
+        "total": 62.62279510498047
+    }
+}
